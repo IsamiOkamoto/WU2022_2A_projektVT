@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav_head_t{
+    grid-area: he;
+}
+#burger{
+    margin-right: 87.5px;
+    cursor: pointer;
+}
+#nav_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color: skyblue;
+    position: absolute;
+    right: 0px;
+    top: -90vh;
+    width: 200px;
+    list-style: none;
+    transition: all .6s;
+
+}
+#nav_links a{
+    text-decoration: none;
+    color: midnightblue;
+    font-size: 1.25rem;
+    letter-spacing: 0.18rem;
+    font-weight: bold;
+    display: flex;
+    height: 3rem;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+#nav_links a:hover{
+    color: white;
+    background-color: darkblue;
+    transition: ease .6s;
+}
+.b_line{
+    width: 24px;
+    height: 4px;
+    background-color: black;
+    margin: 4px;
+    border-radius: 25%;
+    transition: all .6s;
+}
+.cross #line_two{
+    opacity: 0;
+}
+.cross #line_one{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.cross #line_three{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav_active{
+    transform: translate(0, 100vh);
+}
+#div_time{
+    width: 100vw;
+    height: auto;
+    grid-area: ma;
+    background-image: url("img/Terminal_pic1.jpg");
+}
+#div_main{
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "he"
+    "ma";
+}
+#div_timetable{
+    background-color: lightgrey;
+    margin: 5vh;
+    width: 90vh;
+    height: 100px;
+    border-radius: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "de"
+    "ar"
+    "tr"
+    "bu";
+}
+.time_show{
+    background-color: black;
+}
+#avg_time{
+    grid-area: de;
+}
+#ank_time{
+    grid-area: ar
+}
+#tag_time{
+    grid-area: tr;
+}
+#buss_time{
+    grid-area: bu;
+}
