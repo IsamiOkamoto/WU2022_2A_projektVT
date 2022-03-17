@@ -18,6 +18,15 @@ nav{
     margin-right: 87.5px;
     cursor: pointer;
 }
+.logo{
+    position: absolute;
+    top: 1.5vh;
+    left: 1.5vw;
+    height: 7vh;
+}
+.logo_img{
+    height: 7vh;
+}
 #nav_links{
     display: flex;
     flex-direction: column;
@@ -95,7 +104,7 @@ nav{
 #div_timetable{
     background-color: rgba(232, 232, 232, 0.6);
     margin: 20px;
-    width: 90vh;
+    width: 90vw;
     height: auto;
     border-radius: 3%;
     display: grid;
@@ -113,6 +122,8 @@ nav{
     width: auto;
     margin: 15px;
     border-radius: 7%;
+    display: flex;
+    
 }
 #avg_time{
     grid-area: de;
@@ -126,6 +137,14 @@ nav{
 #buss_time{
     grid-area: bu;
 }
-h1{
+h2{
     color: white;
+    font-size: 1.25rem;
+}
+@media screen and (min-width: 800px){
+    #div_timetable{
+        grid-template-areas: 
+        "de ar"
+        "tr bu";
+    }
 }
