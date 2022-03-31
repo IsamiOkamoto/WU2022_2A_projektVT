@@ -79,6 +79,10 @@ nav{
 .nav_active{
     transform: translate(0, 100vh);
 }
+.nav_head{
+    position: sticky;
+    top: 0;
+}
 #div_time{
     width: auto;
     height: auto;
@@ -123,7 +127,13 @@ nav{
     margin: 15px;
     border-radius: 7%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.board_time{
+    height: 40vh;
+    width: auto;
 }
 #avg_time{
     grid-area: de;
