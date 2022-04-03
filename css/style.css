@@ -202,6 +202,134 @@ nav{
     grid-area: q5;
     margin-bottom: 15px;
 }
+.info_aa{
+    margin: 10px;
+    font-size: 1.25rem;
+}
+#div_shop{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "sb1"
+    "st1"
+    "sb2"
+    "st2"
+    "sb3"
+    "st3"
+    "rb1"
+    "rt1"
+    "rb2"
+    "rt2"
+    "rb3"
+    "rt3"
+    "hb1"
+    "ht1"
+}
+#shop_b1{
+    grid-area: sb1;
+}
+#shop_b2{
+    grid-area: sb2;
+}
+#shop_b3{
+    grid-area: sb3;
+}
+#shop_b4{
+    grid-area: rb1;
+}
+#shop_b5{
+    grid-area: rb2;
+}
+#shop_b6{
+    grid-area: rb3;
+}
+#shop_b7{
+    grid-area: hb1;
+}
+.shop_b{
+    width: auto;
+    margin: 30px;
+    max-width: 80vw;
+}
+#shop_t1{
+    grid-area: st1;
+}
+#shop_t2{
+    grid-area: st2;
+}
+#shop_t3{
+    grid-area: st3;
+}
+#shop_t4{
+    grid-area: rt1;
+}
+#shop_t5{
+    grid-area: rt2;
+}
+#shop_t6{
+    grid-area: rt3;
+}
+#shop_t7{
+    grid-area: ht1;
+}
+.shop_tt{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.shop_t{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#div_home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#body_home{
+    background-image: url("../img/skyler-smith-9xdho4stJQ8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+#home_t{
+    background-color: rgba(232, 232, 232, 0.6);
+    margin: 20px;
+    width: 80vw;
+    border-radius: 7%;
+}
+.p_home_t{
+    margin: 20px;
+    font-size: 1.25rem;
+}
+h1{
+    margin-top: 30px;
+}
+#div_link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.home_link{
+    background-color: rgba(0, 0, 0, 0.94);
+    border-radius: 7%;
+    height: 20vh;
+    width: 50vw;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.link_p{
+    font-size: 3rem;
+    color: white;
+}
 @media screen and (min-width: 800px){
     #div_timetable{
         grid-template-areas: 
@@ -216,7 +344,7 @@ nav{
     }
     #div_info{
         grid-template-rows: auto;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 2fr 2fr;
         grid-template-areas: 
         "q1 ma"
         "q2 ma"
@@ -230,6 +358,32 @@ nav{
     }
     #g_map{
         height: 80vh;
-        width: 30vw;
+        width: 40vw;
+    }
+    #div_shop{
+    grid-template-areas: 
+    "sb1 st1"
+    "sb2 st2"
+    "sb3 st3"
+    "rt1 rb1"
+    "rt2 rb2"
+    "rt3 rb3"
+    "hb1 ht1";
+    }
+    .shop_b{
+        max-width: 40vw;
+    }
+    .shop_t{
+        background-color: rgb(116, 147, 248);
+    }
+    #div_link{
+        flex-direction: row;
+    }
+    .home_link{
+        width: 15vw;
+        min-width: 300px;
+    }
+    #home_t{
+        width: 60vw;
     }
 }
