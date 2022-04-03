@@ -121,19 +121,21 @@ nav{
     "bu";
 }
 .time_show{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.94);
     height: 50vh;
     width: auto;
     margin: 15px;
     border-radius: 7%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    
+    flex-direction: column;
 }
 .board_time{
-    height: 40vh;
+    font-size: 4vw;
+    color: white;
     width: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #avg_time{
     grid-area: de;
@@ -147,14 +149,87 @@ nav{
 #buss_time{
     grid-area: bu;
 }
-h2{
+.h2_time{
     color: white;
-    font-size: 1.25rem;
+    font-size: 5vw;
+}
+#g_map{
+    width: 90vw;
+    height: 40vh;
+    grid-area: ma;
+    margin-top: 30px;
+    margin-left: 5vw;
+    margin-bottom: 30px;
+}
+#div_info{
+    background-color: rgb(182, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "q1"
+    "q2"
+    "q3"
+    "q4"
+    "q5"
+    "ma";
+}
+.info_a{
+    border-radius: 4%;
+    background-color: skyblue;
+    height: auto;
+    width: 70vw;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 15vw;
+}
+.info_q{
+    margin: 4%;
+}
+#info_a1{
+    grid-area: q1;
+}
+#info_a2{
+    grid-area: q2;
+}
+#info_a3{
+    grid-area: q3;
+}
+#info_a4{
+    grid-area: q4;
+}
+#info_a5{
+    grid-area: q5;
+    margin-bottom: 15px;
 }
 @media screen and (min-width: 800px){
     #div_timetable{
         grid-template-areas: 
         "de ar"
         "tr bu";
+    }
+    .board_time{
+        font-size: 2.5vw;
+    }
+    .h2_time{
+        font-size: 3vw;
+    }
+    #div_info{
+        grid-template-rows: auto;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: 
+        "q1 ma"
+        "q2 ma"
+        "q3 ma"
+        "q4 ma"
+        "q5 ma";
+    }
+    .info_a{
+        width: 40vw;
+        margin-left: 5vw;
+    }
+    #g_map{
+        height: 80vh;
+        width: 30vw;
     }
 }
