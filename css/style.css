@@ -134,7 +134,7 @@ nav{
 .time_text{
     font-size: 4vw;
     color: white;
-    width: auto;
+    width: 30vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #avg_time{
@@ -334,9 +334,18 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    
+    width: 80vw;
+}
+.time_gate{
+    width: 10vw;
+}
+.time_time{
+    width: 15vw;
 }
 @media screen and (min-width: 800px){
+    .time_info_board{
+        width: 40vw
+    }
     #div_timetable{
         grid-template-areas: 
         "de ar"
@@ -344,6 +353,13 @@ h1{
     }
     .time_text{
         font-size: 2.5vw;
+        width: 15vw;
+    }
+    .time_gate{
+        width: 5vw;
+    }
+    .time_time{
+        width: 7.5vw;
     }
     .h2_time{
         font-size: 3vw;
